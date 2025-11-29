@@ -5,39 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/png" href="logo.png" />
     <title>@qursary</title>
 </head>
 
 <body>
     <div class="container">
-        <img src="logo-full.png" width="250" height="250">
-        <div>
-            <script>
-                function go() {
-                    var input = document.getElementById('url-target');
-                    if (input.value) {
-                        window.location.href = '/main/' + input.value;
-                    } else {
-                        alert('url');
-                    }
-                }
-            </script>
-            <div>
-                <input class="w3-xlarge" type='text' placeholder='https://www.discord.com/login' id='url-target'
-                    onkeydown='if(event.key==="Enter") go()' />
-                <button onclick='go()' class="w3-xlarge">enter</button>
-            </div>
-            <br>
-            <br>
-            </p>
-            <p class="w3-medium">source <a class="w3-medium" href="https://github.com/qursary/goat" target="_blank">here</a></p>
+        <!-- Logo -->
+        <img src="logo-full.png" width="250" height="250" alt="Logo">
+
+        <!-- Input + Button -->
+        <div class="url">
+            <input type="text" placeholder="https://www.discord.com/login" id="url-target"
+                onkeydown='if(event.key==="Enter") go()' />
+            <button id="btn" onclick="go()">Enter</button>
         </div>
+
+        <!-- Source link -->
+        <p class="source">Source <a href="https://github.com/qursary/goat" target="_blank">here</a></p>
     </div>
+
+    <script>
+        function go() {
+            var input = document.getElementById('url-target');
+            if (input.value) {
+                window.location.href = '/main/' + input.value;
+            } else {
+                alert('Please enter a URL');
+            }
+        }
+    </script>
 </body>
 
 </html>
