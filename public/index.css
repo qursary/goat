@@ -1,20 +1,21 @@
-/* Base styles */
+/* base styles */
 body {
   margin: 0;
   padding: 0;
-  background-color: #0a0f0c;
-  font-family: 'VT323', monospace;
+  background: linear-gradient(180deg, #0a0f0c, #111);
+  font-family: 'Pixelify Sans', cursive;
   color: #ccebc5;
   text-align: center;
+  text-transform: lowercase;
 }
 
-/* Container */
+/* container */
 .container {
   margin-top: 8%;
   padding: 20px;
 }
 
-/* Logo styling */
+/* logo */
 .logo {
   width: 200px;
   height: auto;
@@ -22,21 +23,21 @@ body {
   filter: drop-shadow(0 0 6px #7fc97f);
 }
 
-/* Input + Button wrapper */
+/* input + button wrapper */
 .url-box {
   width: 320px;
   margin: auto;
 }
 
-/* Input field */
+/* input field */
 #url-input {
   width: 100%;
-  padding: 12px;
-  font-size: 18px;
-  background-color: #1c1f1d;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #1a1f1a;
   color: #d9f2d9;
-  border: 1px solid #7fc97f;
-  border-radius: 18px;
+  border: 2px solid #3fa34d;
+  border-radius: 50px;
   box-sizing: border-box;
   margin-bottom: 12px;
   transition: box-shadow 0.3s, border-color 0.3s;
@@ -45,32 +46,32 @@ body {
 #url-input:focus {
   outline: none;
   border-color: #a6dba0;
-  box-shadow: 0 0 8px #a6dba0;
+  box-shadow: 0 0 10px #a6dba0;
 }
 
-/* Button */
+/* button */
 button {
   width: 100%;
-  padding: 12px;
-  font-size: 18px;
-  background-color: #1c1f1d;
-  color: #7fc97f;
-  border: 1px solid #7fc97f;
-  border-radius: 18px;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #1a1f1a;
+  color: #3fa34d;
+  border: 2px solid #3fa34d;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #7fc97f;
+  background-color: #3fa34d;
   color: #0a0f0c;
-  box-shadow: 0 0 10px #a6dba0;
+  box-shadow: 0 0 12px #3fa34d;
 }
 
-/* Source link */
+/* github link */
 .source {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .source a {
