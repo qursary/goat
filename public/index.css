@@ -17,14 +17,26 @@ body {
     text-shadow: 0 0 4px #fff;
 }
 
-/* Paragraphs */
-.container p {
-    font-size: 48px;
-    margin-bottom: 10px;
+/* Logo glow effect */
+.logo {
+    filter: drop-shadow(0 0 10px #0f0);
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        filter: drop-shadow(0 0 5px #0f0);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #0f0);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #0f0);
+    }
 }
 
 /* Input field */
-#iurl {
+#url-target {
     background-color: #111;
     width: 100%;
     border: 1px solid #fff;
@@ -38,7 +50,7 @@ body {
     transition: 0.3s;
 }
 
-#iurl:focus {
+#url-target:focus {
     border-color: #0f0;
     outline: none;
     box-shadow: 0 0 5px #0f0;
@@ -61,7 +73,20 @@ body {
 #btn:hover {
     background-color: #0f0;
     color: #000;
-    box-shadow: 0 0 5px #0f0;
+    box-shadow: 0 0 15px #0f0;
+    animation: pulseGlowBtn 1.5s infinite;
+}
+
+@keyframes pulseGlowBtn {
+    0% {
+        box-shadow: 0 0 5px #0f0;
+    }
+    50% {
+        box-shadow: 0 0 20px #0f0;
+    }
+    100% {
+        box-shadow: 0 0 5px #0f0;
+    }
 }
 
 /* Links */
@@ -75,10 +100,17 @@ body {
 .container a:hover {
     font-size: 20px;
     color: #0f0;
+    text-shadow: 0 0 5px #0f0;
 }
 
 /* URL wrapper */
 .url {
     width: 300px;
     margin: auto;
+}
+
+/* Source text */
+.source {
+    font-size: 18px;
+    margin-top: 20px;
 }
