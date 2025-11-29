@@ -1,75 +1,83 @@
+/* Global styles */
 body {
-    font-family: "Ubuntu";
-    font-size: "25px";
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
     text-align: center;
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
+/* Container */
 .container {
     margin-top: 10%;
-    font-family: "Ubuntu";
-    font-size: "50px";
-    color: #FFF;
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 0 0 4px #fff;
 }
 
+/* Paragraphs */
 .container p {
-    font-size: 50px;
-    margin-bottom: 2px;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
+/* Input field */
 #iurl {
-    background-color: inherit;
+    background-color: #111;
     width: 100%;
-    height: 28px;
-    border: solid 1px #FFF;
-    font-family: "Ubuntu";
+    border: 1px solid #fff;
     font-size: 16px;
     color: #eee;
-    padding: 8px 0px;
-    margin-bottom: 5px;
-    box-sizing: content-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
+#iurl:focus {
+    border-color: #0f0;
+    outline: none;
+    box-shadow: 0 0 5px #0f0;
+}
+
+/* Button */
 #btn {
-    background-color: inherit;
+    background-color: #111;
     width: 100%;
-    height: 28px;
-    border: solid 1px #0066ff;
-    font-family: "Ubuntu";
+    border: 1px solid #0f0;
     font-size: 16px;
-    color: #0066ff;
-    padding: 8px 0px;
-    box-sizing: content-box;
+    color: #0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
     transition: 0.3s;
-    border-radius: 2px;
 }
 
 #btn:hover {
-    background: #0066ff;
-    color: #fff;
-    background-repeat: no-repeat;
+    background-color: #0f0;
+    color: #000;
+    box-shadow: 0 0 5px #0f0;
 }
 
+/* Links */
 .container a {
-    height: 20px;
-    background: inherit;
-    background-size: cover;
-    color: #ddd;
-    border: 0;
-    cursor: pointer;
-    font-family: "Ubuntu";
+    color: #ccc;
     font-size: 17px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
 .container a:hover {
-    font-size: 23;
+    font-size: 20px;
+    color: #0f0;
 }
 
+/* URL wrapper */
 .url {
     width: 300px;
     margin: auto;
