@@ -1,8 +1,9 @@
-/* base styles */
-body {
+/* ensure full background coverage */
+html, body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #0a0f0c, #111);
+  height: 100%;
+  background-color: #0a0f0c;
   font-family: 'Pixelify Sans', cursive;
   color: #ccebc5;
   text-align: center;
@@ -20,7 +21,7 @@ body {
   width: 200px;
   height: auto;
   margin-bottom: 30px;
-  filter: drop-shadow(0 0 6px #7fc97f);
+  filter: drop-shadow(0 0 6px #3fa34d);
 }
 
 /* input + button wrapper */
@@ -59,6 +60,8 @@ button {
   border: 2px solid #3fa34d;
   border-radius: 50px;
   cursor: pointer;
+  text-align: center;
+  line-height: normal;
   transition: all 0.3s ease;
 }
 
@@ -71,7 +74,8 @@ button:hover {
 /* github link */
 .source {
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .source a {
