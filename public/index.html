@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>@qursary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="logo.png" />
-    <title>@qursary</title>
 </head>
 
 <body>
     <div class="container">
-        <!-- Logo with glow -->
-        <img src="logo-full.png" width="250" height="250" alt="Logo" class="logo">
+        <!-- Logo -->
+        <img src="logo-full.png" alt="Logo" class="logo">
 
         <!-- Input + Button -->
-        <div class="url">
-            <input type="text" placeholder="https://www.discord.com/login" id="url-target"
-                onkeydown='if(event.key==="Enter") go()' />
-            <button id="btn" onclick="go()">Enter</button>
+        <div class="url-box">
+            <input type="text" id="url-input" placeholder="https://www.discord.com/login"
+                onkeydown='if(event.key==="Enter") go()'>
+            <button onclick="go()">Enter</button>
         </div>
 
         <!-- Source link -->
@@ -28,7 +28,7 @@
 
     <script>
         function go() {
-            var input = document.getElementById('url-target');
+            const input = document.getElementById('url-input');
             if (input.value) {
                 window.location.href = '/main/' + input.value;
             } else {
