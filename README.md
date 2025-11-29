@@ -1,17 +1,3 @@
-# Womginx
-
-> Fastest proxy using only nginx as the backend server
-
-<a href="https://repl.it/github/binary-person/womginx"><img src="https://docs.replit.com/images/repls/run-on-replit.svg" alt="Replit" width="150"/></a>
-
-**Before you deploy to Heroku, read the following: Heroku decided that this repository violates the ToS, so directly clicking the button below if you're in the main repository will result in an error. Forked repositories may work, though this is not guaranteed. Regardless, I am NOT responsible if your Heroku account gets suspended because of deploying this application. Proceed at your own risk.**
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-Demo: https://womginx.arph.org
-
-~~Heroku Docker demo: https://womginx.herokuapp.com~~ taken down for now. If you need one, deploy one using the button above or use the demo link.
-
 ## Site compatibility
 
 What works:
@@ -102,28 +88,3 @@ sudo cp ../nginx.conf /etc/nginx/nginx.conf
 # 7. restart the nginx server
 sudo service nginx restart
 ```
-
-## Why did you want to use only nginx and burden yourself with nginx's "restrictive" and "esoteric" config?
-
-I did it as a game, or, challenge, for myself to learn nginx and also to take advantage of nginx's resilience and speed for handling lots of requests, which is perfect for proxying.
-
-It also was to deter nginx's restrictive reputation (in a community server I'm in).
-
-## Contributing
-
-Contributions are welcome. Send in a pull request and I'll be more than happy to take a look.
-
-## Future plans
-
-Make another client rewriting library similar to wombat but made with intent to be a proxy rewriting library and with the goal of ease of use for the server and the client.
-
-## License
-
-This project is licensed under the AGPL license.
-
-Wombat uses AGPL, and under the terms of that license, this project, therefore, is also required to be licensed under AGPL.
-
-## Credits
-
-- Front page design by [voept](https://github.com/voept)
-- Logo design by [kinglalu](https://github.com/kinglalu)
