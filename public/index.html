@@ -2,40 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@qursary</title>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="logo.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@qursary</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link href="index.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="logo.png" />
 </head>
 
 <body>
-    <div class="container">
-        <!-- Logo -->
-        <img src="logo-full.png" alt="Logo" class="logo">
+  <div class="container">
+    <!-- Logo -->
+    <img src="logo-full.png" alt="Logo" class="logo" />
 
-        <!-- Input + Button -->
-        <div class="url-box">
-            <input type="text" id="url-input" placeholder="https://www.discord.com/login"
-                onkeydown='if(event.key==="Enter") go()'>
-            <button onclick="go()">Enter</button>
-        </div>
-
-        <!-- Source link -->
-        <p class="source">source <a href="https://github.com/qursary/goat" target="_blank"></a></p>
+    <!-- Input + Button -->
+    <div class="url-box">
+      <input type="text" id="url-input" placeholder="https://www.discord.com/login"
+        onkeydown='if(event.key==="Enter") go()' />
+      <button onclick="go()">Enter</button>
     </div>
 
-    <script>
-        function go() {
-            const input = document.getElementById('url-input');
-            if (input.value) {
-                window.location.href = '/main/' + input.value;
-            } else {
-                alert('Please enter a URL');
-            }
-        }
-    </script>
+    <!-- Source link -->
+    <p class="source">Source <a href="https://github.com/qursary/goat" target="_blank">here</a></p>
+  </div>
+
+  <script>
+    function go() {
+      const input = document.getElementById("url-input");
+      if (input.value) {
+        window.location.href = "/main/" + input.value;
+      } else {
+        alert("Please enter a URL");
+      }
+    }
+  </script>
 </body>
 
 </html>
